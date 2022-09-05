@@ -1,6 +1,6 @@
 from mesa import Agent
 
-class Entity(Agent):
+class WalkerAgent(Agent):
     grid = None
     x = None
     y = None

@@ -66,7 +66,7 @@ class PoliceThief(Model):
         for i in range(self.initial_people):
             x = self.random.randrange(self.width)
             y = self.random.randrange(self.height)
-            person = Person(self.next_id(), (x, y), self)
+            person = Person(self.next_id(), (x, y), self, True)
             self.grid.place_agent(person, (x, y))
             self.schedule.add(person)
 
