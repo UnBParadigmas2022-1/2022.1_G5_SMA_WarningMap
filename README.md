@@ -34,12 +34,13 @@ Para conseguir usar o projeto, é necessario ter o python(Recomendado python 3.1
 
 ## Uso
 
-Para roda o projeto, após ter os requisitos necessarios intalados. Basta clonar projeto para o repositório local, entrar na pasta "src" usando:
-<pre><code> cd src
+Para roda o projeto, Basta clonar o repositório e utilizar o comando `docker-compose up`, o que fará o orquestrador subir os containeres:
 </code></pre>
 e rodar:
-<pre><code> python run.py
+<pre><code> sudo docker-compose up
 </code></pre>
+
+É necessário que tenha os pré-requisitos `Docker` e `Docker Compose` instalados
 
 ## Vídeo
 
