@@ -14,9 +14,7 @@ class PoliceThief(Model):
     initial_thieves = 100
     initial_polices = 20
 
-    description = (
-        "Model to create Police-Thief-Person relationship."
-    )
+    description = "Model to create Police-Thief-Person relationship."
 
     def __init__(
         self,

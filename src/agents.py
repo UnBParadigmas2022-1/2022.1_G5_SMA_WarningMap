@@ -1,5 +1,5 @@
-from mesa import Agent
 from entities import WalkerAgent
+
 
 class Thief(WalkerAgent):
     def __init__(self, unique_id, pos, model, moore):
@@ -7,10 +7,12 @@ class Thief(WalkerAgent):
 
     def step(self):
         self.random_move()
-        if self.pos != None:
+        if self.pos is not None:
             this_cell = self.model.grid.get_cell_list_contents([self.pos])
-            if(any(isinstance(obj, Person) for obj in this_cell)):
-                person = [obj for obj in this_cell if isinstance(obj, Person)][0]
+            if any(isinstance(obj, Person) for obj in this_cell):
+                person = [obj for obj in this_cell if isinstance(obj, Person)][
+                    0
+                ]
                 if not person.isVictim:
                     person.isVictim = True
 
@@ -36,4 +38,4 @@ class Person(WalkerAgent):
         self.denounced = 0
 
     def step(self):
-        self.denounced+=1
+        self.denounced += 1
