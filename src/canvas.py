@@ -45,5 +45,5 @@ model_params = {
 server = ModularServer(
     PoliceThief, [canvas_element], "Warning Map", model_params
 )
-# TODO: add port in .env
+
 server.port = PORT
