@@ -29,6 +29,8 @@ class RandomActivationByType(RandomActivation):
     def step_type(self, type):
         agent_keys = list(self.agents_by_type[type].keys())
         self.model.random.shuffle(agent_keys)
+        for agent_key in agent_keys:
+            self.agents_by_type[type][agent_key].step()
 
     def get_type_count(self, type_class):
         return len(self.agents_by_type[type_class].values())
