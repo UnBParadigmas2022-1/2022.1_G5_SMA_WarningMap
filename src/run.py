@@ -1,3 +1,3 @@
 from canvas import server
 
-server.lauch()
+server.launch()

@@ -30,7 +30,7 @@ class Police(Entity):
             self.model.grid.remove_agent(arrest_thief)
 
 
-class Person(Entity):
+class Person(Agent):
     def __init__(self, unique_id, pos, model):
         super().__init__(unique_id, model)
         self.isVictim = False
