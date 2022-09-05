@@ -11,7 +11,7 @@ class PoliceThief(Model):
     height = 30
     width = 30
 
-    intial_thieves = 100
+    initial_thieves = 100
     initial_polices = 20
 
     description = (
