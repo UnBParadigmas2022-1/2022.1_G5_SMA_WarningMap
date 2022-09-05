@@ -1,8 +1,8 @@
 from collections import defaultdict
 from mesa.time import RandomActivation
 
-class RandomActivationByType(RandomActivation):
 
+class RandomActivationByType(RandomActivation):
     def __init__(self, model):
         super().__init__(model)
         self.agents_by_type = defaultdict(dict)
