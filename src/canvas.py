@@ -4,6 +4,7 @@ import mesa
 from mesa.visualization.ModularVisualization import ModularServer
 from mesa.visualization.modules import CanvasGrid
 
+from settings import PORT
 from agents import Person, Police, Thief
 from models import PoliceThief
 
@@ -45,4 +46,4 @@ server = ModularServer(
     PoliceThief, [canvas_element], "Warning Map", model_params
 )
 # TODO: add port in .env
-server.port = 8000
+server.port = PORT
