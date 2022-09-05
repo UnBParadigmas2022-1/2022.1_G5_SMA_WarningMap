@@ -6,6 +6,7 @@ import mesa
 from agents import Police, Thief, Person
 from models import PoliceThief
 
+
 def agentPortrayal(agent):
     if agent is None:
         return
@@ -24,25 +25,27 @@ def agentPortrayal(agent):
             portrayal["Shape"] = "assets/person.png"
     elif type(agent) is Thief:
         portrayal["Shape"] = "assets/thief.jpg"
-    elif type(agent) is  Police:
+    elif type(agent) is Police:
         portrayal["Shape"] = "assets/policeman.png"
 
     return portrayal
 
-canvas_element = CanvasGrid(agentPortrayal, 20, 20, 500, 500)
+
+canvas_element = CanvasGrid(agentPortrayal, 30, 30, 500, 500)
 
 model_params = {
     "initial_thieves":  mesa.visualization.Slider(
-        "Quantidade inicial de ladrões", 100, 10, 300
+        "Quantidade de ladrões", 100, 10, 300
     ),
     "initial_polices": mesa.visualization.Slider(
         "Quantidade de policiais", 50, 10, 300
     ),
     "initial_people": mesa.visualization.Slider(
-         "Quantidade de civis", 50, 10, 300
+        "Quantidade de civis", 50, 10, 300
     ),
 }
 
-server = ModularServer(PoliceThief, [canvas_element], "Warning Map", model_params)
+server = ModularServer(
+    PoliceThief, [canvas_element], "Warning Map", model_params)
 
 server.port = 8000

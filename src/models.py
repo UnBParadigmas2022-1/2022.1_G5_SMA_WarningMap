@@ -5,22 +5,14 @@ from mesa.datacollection import DataCollector
 from agents import Police, Thief, Person
 from scheduler import RandomActivationByType
 
+
 class PoliceThief(Model):
     # Initial Values
-    height = 20
-    width = 20
-        
+    height = 30
+    width = 30
+
     intial_thieves = 100
     initial_polices = 20
-
-    student_multiply = 0.05
-    college_multiply = 0.03
-
-    college_gain_from_wage = 20
-
-    freela = False
-    freela_job_deadline = 30
-    student_gain_from_wage = 4
 
     description = (
         "Model to create Police-Thief-Person relationship."
@@ -28,8 +20,8 @@ class PoliceThief(Model):
 
     def __init__(
         self,
-        height=20,
-        width=20,
+        height=30,
+        width=30,
         initial_thieves=100,
         initial_polices=20,
         initial_people=30,
@@ -39,7 +31,7 @@ class PoliceThief(Model):
         # Set parameters
         self.height = height
         self.width = width
-        
+
         self.intial_thieves = initial_thieves
         self.initial_polices = initial_polices
         self.initial_people = initial_people
@@ -69,7 +61,7 @@ class PoliceThief(Model):
             police = Police(self.next_id(), (x, y), self, True)
             self.grid.place_agent(police, (x, y))
             self.schedule.add(police)
-            
+
         # Create person:
         for i in range(self.initial_people):
             x = self.random.randrange(self.width)
