@@ -35,7 +35,8 @@ class Person(WalkerAgent):
     def __init__(self, unique_id, pos, model, moore):
         super().__init__(unique_id, pos, model, moore=moore)
         self.isVictim = False
-        self.denounced = 0
+        self.movements = 0
 
     def step(self):
-        self.denounced += 1
+        self.random_move()
+        self.movements += 1
