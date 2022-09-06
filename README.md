@@ -58,15 +58,15 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Denys Rogeres Leles dos Santos  |   |  |
-| Felipe Correia Andrade  |   |   |
-| Jonathan Jorge Barbosa Oliveira  |   |  |
-| Lucas Melo dos Santos  |   |  |
-| Mateus Brandao Teixeira  |   |  |
-| Mateus Gomes do Nascimento  |   |  |
-| Matheus Afonso de Souza  |   |  |
-| Thiago Mesquita Peres Nunes de Carvalho  |   |  |
-| Vinicius de Sousa Saturnino  |   |  |
+| Denys Rogeres Leles dos Santos  | Criação do repositório, definição de tema para o trabalho, criação dos agentes, configuração do canvas e início da configuração do schedule  | Excelente |
+| Felipe Correia Andrade  | Montagem dos arquivos de canvas e agents e documentação do README, ajuda na refatoração | Excelente  |
+| Jonathan Jorge Barbosa Oliveira  | Atuei na implementação do menu, das models, do scheduler, dos agents do projeto, lint do código final e criação do arquivo de requisitos mínimos para execução do projeto | Excelente |
+| Lucas Melo dos Santos  | Função de step do agente ladrão e agente pessoa, fixes para atualizar métodos que estão deprecated, adicao de verificações para não ocorrer erro nas iterações | Excelente |
+| Mateus Brandao Teixeira  | Criação dos arquivos entities e agents e documentação do README | Excelente |
+| Mateus Gomes do Nascimento  | Implementação das models do projeto, implementação do menu do usuário, implementação do scheduler e implementação dos agents e entities | Excelente |
+| Matheus Afonso de Souza  |  Participei da implementação das models, do menu, do scheduler e dos agents do projeto. Além atuar na implementação da conteinerização da aplicação e de confirmar o arquivo do orquestrador de contêineres e melhorar a utilização de variáveis e Imports | Excelente |
+| Thiago Mesquita Peres Nunes de Carvalho  | Participei da implementação das models, do menu, do scheduler e dos agents do projeto | Excelente |
+| Vinicius de Sousa Saturnino  | Participei da implementação das models, da classe de schedule, menu e agents. Além de contribuir com a documentação do projeto. | Excelente |
 
 ## Lições Aprendidas
 
